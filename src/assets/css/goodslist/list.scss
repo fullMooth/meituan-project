@@ -1,0 +1,122 @@
+.p-list{
+    background:white;
+    margin: 10px 0 20px 0;
+    padding: 0 15px 0px 15px;
+    .sort-by{
+        background:#fff;
+        border-bottom: 1px solid #eee;
+        &>li{
+            float: left;
+            list-style: none;
+            margin-right: 40px;
+            font-size: 12px;
+            padding: 15px 0;
+            &.active{
+                color: #ff8000;
+            }
+        }
+    }
+    .proitem{
+        text-align: left;
+        padding: 20px 0;
+        position: relative;
+        border-bottom:1px solid #ccc;
+        .imgBox{
+            float: left;
+            width: 220px;
+            height: 125px;
+            img{
+                width:100%;
+                border-radius: 5px;
+            }
+            span{
+                position: absolute;
+                left: -4px;
+                top: 25px;
+                width: 25px;
+                height: 14px;
+                background: #FB6433;
+                border-radius: 2px;
+                text-align: center;
+                font-weight: bold;
+                color: #fff;
+            }
+
+        }
+        .itemData{
+            float:left;
+            background: #fff;
+            margin-left: 15px;
+            width: 500px;
+            h3{
+                a{
+                    text-decoration: none;
+                    color: #333;
+                    font-size: 15px;
+                }
+            }
+            &>p{
+                padding-bottom: 10px;
+            }
+            p.comment-details{
+                color:#666;
+                padding: 5px 0;
+                
+                .rate{
+                    display: inline-block;
+                }
+                span.space{
+                    padding: 0 5px;
+                    font-size: 12px;
+                }
+            }
+            span.p-item-addr{
+                margin:0 20px;
+            }
+            span.p-item-map{
+                color:#ff8000;
+                a{
+                    text-decoration: none;
+                    color:#222;
+                }
+            }
+            &>ul{
+                width: 136%;
+                padding-top:5px;
+                border-top: 1px dotted #ccc;
+                li{
+                    list-style: none;
+                    padding: 10px 0;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    &:hover{
+                        background: rgb(240, 236, 236);
+                        .deal-title{
+                            a{
+                                color:#ff8000;
+                            }
+                        }
+                    }
+                    p{
+                        span{
+                            margin-right: 10px;
+                            color: #999;
+                        }
+                        .cur-price{
+                            font-size: 15px;
+                            color:#FB6433;
+                        }
+                    }
+                    p.deal-title{
+                        a{
+                            font-size: 14px;
+                            text-decoration: none;
+                            color:#555;
+                        }
+                        padding-bottom: 5px;
+                    }
+                }
+            }
+        }
+    }
+}

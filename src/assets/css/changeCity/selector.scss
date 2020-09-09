@@ -1,0 +1,85 @@
+.selector{
+    display:inline-block;
+    width:148px;
+    height:38px;
+    border:1px solid #ece9e9;
+    border-radius: 5px;
+    line-height: 38px;
+    padding: 0 10px;
+    color:#666;
+    font-size: 14px;
+    position: relative;
+    cursor: pointer;
+    &.city-selector{
+        cursor: not-allowed;
+        margin-left: 20px;
+    }
+    .choose-wrap{
+        .name{
+            position:absolute;
+            left:10px;
+            font-size: 15px;
+        }
+        i{
+            position:absolute;
+            right: 10px;
+            top:50%;
+            transform: translateY(-50%);
+        }
+        .itemlist{
+            // display: none;
+            position: absolute;
+            background:white;
+            top: 50px;
+            z-index: 10;
+            min-width: 100px;
+            height: 394px;
+            border:1px solid #eee;
+            border-radius: 4px;
+            box-shadow: 0 0 3px #ccc;
+            /*提取公共代码*/
+            &::before,
+            &::after{
+                content:"";
+                display: inline-block;
+                position: absolute;
+                left: 20%;
+                border-left:8px solid transparent;
+                border-right: 8px solid transparent;
+                z-index: 12;
+            }
+            &::before{
+                border-bottom:8px solid #eee;
+                top:-8px;
+            }
+            &::after{
+                border-bottom:8px solid white;
+                top:-5px;
+            }
+            .title{
+                text-align: left;
+                margin-left: 15px;
+                font-size: 18px;
+                padding-top:20px;
+                color:#999;
+            }
+            .city-content{
+                writing-mode: vertical-lr;
+                padding-bottom: 6px;
+                span{
+                    display: inline-block;
+                    width: 86px;
+                    height: 30px;
+                    text-align: left;
+                    box-sizing: border-box;
+                    padding:0 15px 0 15px;
+                    cursor: pointer;
+                    writing-mode: horizontal-tb;
+                    &:hover{
+                        color: orange;
+                    }
+                }
+            }
+        }
+    }
+}

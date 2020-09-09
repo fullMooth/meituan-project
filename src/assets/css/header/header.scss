@@ -1,0 +1,207 @@
+.headers{
+    width: 100%;
+    background: red;
+    text-align: left;
+    background:#fff;
+    
+    .topbar{
+        width: 93%;
+        height: 40px;
+        line-height:40px;
+        margin:0 auto;
+        .m-geo{
+            float:left;
+            .position{
+                float:left;
+                color:#666;
+                i{
+                    font-size: 14px;
+                }
+            }
+            .user-info{
+                float: left;
+                margin-left: 30px;
+                .login{
+                    color:#fe8c00;
+                }
+                .register{
+                    margin-left: 15px;
+                }
+            }
+        }
+       .user{
+           float: right;
+           .personal-list{
+                &>li{
+                    float: left;
+                    list-style: none;
+                    text-align: center;
+                    position: relative;
+                    width: 80px;
+                    box-sizing: border-box;
+                    .second-menu{
+                        display: none;
+                        position: absolute;
+                        width: 100%;
+                        right: -1px;
+                        border:1px solid #eee;
+                        background: #fff;
+                        z-index: 1000;
+                        // box-shadow: 0 0 3px #ccc;
+                        dd{
+                            line-height: 30px;
+                        }
+                    }
+                    
+                    &:hover{
+                        box-sizing: border-box;
+                        border:1px solid #eee;
+                        line-height: 38px;
+                        background: #fff;
+                    }
+                    &:hover::after{
+                        content: "";
+                        position: absolute;
+                        height: 2px;
+                        width: 78px;
+                        background: white;
+                        bottom: -2px;
+                        right: 0;
+                        z-index: 1002;
+                    }
+                    &:hover .second-menu{
+                        display: block;
+                    }
+                   
+                    dl.shop-center{
+                        width: 130px;
+                        padding: 0;
+                    }
+                    .web-router{
+                        width: 1204px;
+                        border:1px solid #eee;
+                        height: 300px;
+                        box-sizing: border-box;
+                        padding: 30px 50px;
+                        border-top-left-radius: 5px;
+                        border-bottom-left-radius: 5px;
+                        .web{
+                            float: left;
+                            margin-right: 30px;
+                            dt{
+                                margin-bottom: 20px;
+                                font-size: 14px;
+                                font-weight: 600;
+                            }
+                            dd{
+                                width: 80px;
+                                float: left;
+                            }
+                        }
+                        .hotel{
+                            width: 240px;
+                            
+                        }
+                        .taste{
+                            width:160px;
+                        }
+                        .movie{
+                            width: 110px;
+                            dd{
+                                width: 100px;
+                            }
+                        }
+                        .phone-app{
+                            width: 370px;
+                            margin-left:100px;
+                            dd{
+                                width: 54px;
+                                margin: 0 10px;
+                                img{
+                                    width: 54px;
+                                }
+                            }
+                        }
+                    }
+                }
+                
+           }
+       }
+       a:hover{
+            color:#fe8c00;
+       }
+       
+    }
+    .searchbar{
+        width: 93%;
+        margin:0 auto;
+        .search-wrap{
+            padding: 30px 0;
+            .logo{
+                img{
+                    width: 130px;
+                }
+            } 
+            .search-area{
+                margin-left: 200px;
+                width: 600px;
+                position: relative;
+                .search-content{
+                    width: 470px;
+                    outline: none;
+                    .el-input__inner{
+                        outline:none;
+                        border:1px solid #ccc;
+                        border-right: none;
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                    
+                }
+                .el-button{
+                    border-top-left-radius: 0;
+                    border-bottom-left-radius: 0;
+                    width: 80px;
+                    background: #ffc800;
+                    border-color:#ffc800;
+                    .el-icon-search{
+                        font-size: 14px;
+                        color:black;
+                        font-weight: bolder;
+                    }
+                }
+                .search-relation{
+                    border:1px solid #ccc;
+                    border-top: none;
+                    border-radius: 2px;
+                    width: 468px;
+                    min-height: 15px;
+                    background: #fff;
+                    position: absolute;
+                    z-index: 15;
+                    // display: none;
+                    li{
+                        list-style: none;
+                        text-indent: 10px;
+                        a{
+                            color:#555;
+                            font-size: 12px;
+                            line-height: 25px;
+                            &:hover{
+                                color:#ffc800;
+                            }
+                        }
+                        &:hover{
+                            background: #f8f8f8;
+                        }
+                    }
+                }
+            }   
+        }
+            
+    }
+    a{
+        color:#999;
+        text-decoration: none;
+    }
+}

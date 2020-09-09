@@ -1,0 +1,15 @@
+
+.index-page{
+    width: 100%;
+    background: #f8f8f8;
+    .banner{
+        width: 1196.61px;
+        margin: 0 auto;
+        // background: yellow;
+    }
+
+   
+}
+@import './banner.scss';
+@import './movie.scss';
+@import './suggestlist.scss';

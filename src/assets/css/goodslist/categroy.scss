@@ -1,0 +1,36 @@
+.categroy{
+    width: 100%;
+    // background:red;
+
+    .c-service{
+        width: 100%;
+        background: #fff;
+        border-radius: 3px;
+        border:1px solid #eee;
+        
+        &>dl{
+            padding:15px 15px 0px;
+           &>dt{
+             float: left; 
+             margin-right: 40px; 
+             font-size:14px;
+             &.all{
+                 padding:2px 8px;
+                 border-radius: 12px;
+                 background:linear-gradient(to bottom right,#FFD000,#FFBD00);   
+             }
+           } 
+           &>dd{
+            float: left;
+            width:700px;
+            text-align: left;
+            padding-left: 10px;
+            border-bottom: 1px solid #eee;
+            .p-selector{
+                margin-bottom: 15px;
+            }
+        }
+           
+        }
+    }
+}

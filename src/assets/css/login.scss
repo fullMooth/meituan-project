@@ -1,0 +1,174 @@
+.page-login{
+    a{
+        text-decoration: none;
+        color: #999;
+    }
+    width: 980px;
+    margin:0 auto;
+    .login-top{
+        width: 100%;
+        text-align: left;
+        margin:40px 0 30px 0;
+        img{
+            width: 130px;
+            height: 47px;
+        }
+    }
+    .login-content{
+        .content-img{
+            float:left;
+            width: 480px;
+            height: 370px;
+            
+        }
+        .login-info{
+            width: 270px;
+            float: left;
+            margin-left: 120px;
+            p.tips-wrap{
+                height: 38px;
+
+                .tips{
+                    width: 100%;
+                    height: 100%;
+                    box-sizing: border-box;
+                    border:1px solid #f5d8a7;
+                    display: inline-block;
+                    background: #fff6db;
+                    text-align: left;
+                    line-height: 36px;
+                    font-size: 13px;
+                    text-indent: 5px;
+                    i{
+                        color:red;
+                        font-size: 13px;
+                    }
+                }
+                margin-bottom: 10px;
+            }
+            p.top{
+                padding-bottom: 10px;
+                font-size: 14px;
+                .account{
+                    float: left;
+                    font-size: 15px;
+                }
+                .phone-vericode{
+                    float:right;
+                }
+            }
+            .uname,
+            .upwd{
+                height: 34px;
+                border:1px solid #999;
+                border-radius: 0px;
+                input{
+                    height: 100%;
+                    border: #ff3800;
+                    border-radius: 0px;
+                }
+            }
+            .upwd{
+                margin:15px 0 10px 0;
+            }
+            p.forget{
+               text-align: right; 
+               a{
+                   color:#ff8300;
+               }
+            }
+            button.sign-in{
+                width: 100%;
+                height: 34px;
+                border:none;
+                outline: none;
+                cursor: pointer;
+                border-radius: 3px;
+                font-size: 14px;
+                font-weight: bold;
+                background-image: linear-gradient(135deg,#FFD000 0,#FFBD00 100%);
+                margin: 15px 0 10px 0;
+            }
+            p.to-register{
+                text-align: left;
+                span{
+                    font-size: 14px;
+                }
+                a{
+                    color: #ff8300;
+                    font-size: 13px;
+                }
+            }
+            p.other-account{
+                width: 100%;
+                margin:20px 0;
+                position: relative;
+                
+                span{
+                    display: inline-block;
+                    font-size: 14px;
+                    &::before,
+                    &::after{
+                        content: "";
+                        display: inline-block;
+                        width: 60px;
+                        position: absolute;
+                        top:50%;
+                        height: 1px;
+                        background: #bbb;
+                    }
+                    &::before{
+                        left:0;
+                    }
+                    &::after{
+                        right: 0;
+                    }
+                }
+            }
+            p.to-other-acc{
+                height: 40px;
+                line-height: 40px;
+                a.qq{
+                    background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1598626716911&di=6946793293665447935d8d27f690231a&imgtype=0&src=http%3A%2F%2Fa3.att.hudong.com%2F32%2F41%2F01100000000000144736419600455_s.jpg') no-repeat;
+                    background-size: 100%;
+                    background-position: center center;
+                }
+                a.weibo{
+                    background: url('https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2632643941,112936345&fm=26&gp=0.jpg') no-repeat;
+                    background-size: 100%;
+                    background-position: center center;
+                }
+                a{
+                    display: inline-block;
+                    width: 25px;
+                    height: 25px;
+                    line-height: 25px;
+                    margin-right: 20px;
+                    border-radius: 3px;
+                }
+                
+            }
+        }
+    }
+    .login-bottom{
+        ul{
+            padding:15px 0;
+            margin: 40px 0 30px 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            li{
+                list-style: none;
+                padding: 0 15px;
+                border-left: 1px solid #eee;
+                float: left;
+            }
+            li.first{
+                padding-left:0; 
+                border:none;
+            }
+        }
+        .copyright{
+            text-align: left;
+        }
+    }
+}
